@@ -45,9 +45,9 @@ const TodoList = () => {
 
   return (
     <>
-      <h1>ToDo List</h1>
       <div className="todo-list">
-        <form onSubmit={handleSubmit}>
+      <h1>ToDo List</h1>
+        <form onSubmit={handleSubmit} className="add">
           <input
             placeholder="Add a task"
             value={text}

@@ -1,6 +1,6 @@
 const TodoItem = ({task, toggleTask, deleteTask}) => {
   return (
-    <li className="todo-item">
+    <li className={task.completed ? "completed" : ""}>
       <input
         type="checkbox"
         checked={task.completed}
