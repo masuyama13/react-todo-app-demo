@@ -6,9 +6,9 @@ const STORAGE_KEY = "todo.tasks.v1";
 const TodoList = () => {
   const [text, setText] = useState("");
   const [tasks, setTasks] = useState(() => {
-  const data = localStorage.getItem(STORAGE_KEY);
-  return data ? JSON.parse(data) : [];
-});
+    const data = localStorage.getItem(STORAGE_KEY);
+    return data ? JSON.parse(data) : [];
+  });
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
